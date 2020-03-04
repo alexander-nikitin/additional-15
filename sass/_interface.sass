@@ -7,15 +7,15 @@
   text-align: center
   text-transform: uppercase
   color: white
-  background-color: complement($basic)
-  border: 1px solid #ff3344
+  background-color: adjust-color($basic, $hue: 150)
+  border: 1px solid adjust-color($basic, $hue: 150)
   border-radius: 25px
   &__start
     margin-top: 20px
   &:hover
-    -webkit-box-shadow: 0 0 25px #999999
-            box-shadow: 0 0 25px #999999
-    background-color: #33aaff
-    border: 1px solid #cceaff
+    -webkit-box-shadow: 0 0 25px adjust-color($basic, $hue: -205)
+    box-shadow: 0 0 25px adjust-color($basic, $hue: -205)
+    background-color: $basic
+    border: 1px solid adjust-color($basic, $lightness: 30%)
   &:focus
     outline: none

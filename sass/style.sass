@@ -1,11 +1,137 @@
-@import 'normalize'
-@import 'variables'
-@import 'interface'
-@import 'grid'
-@import 'templates/header'
-@import 'templates/section'
-
+$basic: #33aaff
+  
 body, p, h1, h2, h3, h4 
   margin: 0
   padding: 0
   font-family: Arial, Helvetica, sans-serif
+.header
+  background-color: darken($basic, 50%)
+  padding: 15px 0
+  color: lighten($basic, 100%)
+  &__title
+    font-size: 18px
+    font-weight: 700
+    line-height: 47px
+  &__callback
+    text-align: right
+.section
+  padding: 70px 0
+  text-align: center
+  &__title
+    font-size: 36px
+    font-weight: 700
+    color: darken($basic, 50%)
+  &__title span
+    color: adjust-color($basic, $hue: 150)
+  &__underline
+    margin: 10px auto
+    width: 200px
+    height: 2px
+    background-color: $basic
+.coral
+  color: adjust-color($basic, $hue: 150)
+.main
+  background-color: adjust-color($basic, $lightness: 30%)
+  position: relative
+  & h1
+    margin-bottom: 25px
+    font-size: 60px
+    font-weight: 300
+    text-transform: uppercase
+    color: darken($basic, 50%)
+  & .sep
+    margin: 25px auto
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    background-color: lighten($basic, 100%)
+  & h3
+    font-size: 36px
+    font-weight: 300
+    color: darken($basic, 50%)
+  &__location
+    margin: 24px auto 21px
+    width: 300px
+    height: 64px
+    font-size: 18px
+    line-height: 64px
+    color: $basic
+    border: 1px solid darken($basic, 50%)
+  & .comment
+    margin-top: 55px
+    color: adjust-color($basic, $hue: -205)
+    font-size: 14px
+    line-height: 18px
+.problems
+  &__list
+    text-align: left
+    & ul
+      list-style: none
+      & li
+        min-height: 100px
+        font-size: 18px
+        font-weight: 300
+        color: darken($basic, 50%)
+        &::before
+          position: relative
+          right: 30px
+          top: 25px
+          content: ''
+          display: block
+          width: 20px
+          height: 20px
+          background-color: $basic
+          border-radius: 50%
+  &__wrapper
+    margin: 0 auto
+    padding: 30px
+    max-width: 700px
+    border: 2px solid $basic
+    & p
+      margin-bottom: 10px
+      font-size: 24px
+      color: darken($basic, 50%)
+.prove
+  background-color: adjust-color($basic, $lightness: 30%)
+  &__img
+    margin: 25px auto 10px
+    min-height: 70px
+  & img
+    border-bottom: 1px solid $basic
+.footer
+  padding: 15px 0
+  font-size: 14px
+  font-weight: 300
+  background-color: darken($basic, 50%)
+  &__left 
+    color: adjust-color($basic, $saturation: -50%)
+    opacity: 0.5
+  &__right 
+    text-align: right
+    color: $basic
+    & a
+      color: $basic
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+.button
+  padding: 10px 30px
+  display: inline-block
+  cursor: pointer
+  font-size: 14px
+  font-weight: 700
+  text-align: center
+  text-transform: uppercase
+  color: lighten($basic, 100%)
+  background-color: adjust-color($basic, $hue: 150)
+  border: 1px solid adjust-color($basic, $hue: 150)
+  border-radius: 25px
+  &__start
+    margin-top: 20px
+  &:hover
+    -webkit-box-shadow: 0 0 25px adjust-color($basic, $hue: -205)
+    box-shadow: 0 0 25px adjust-color($basic, $hue: -205)
+    background-color: $basic
+    border: 1px solid adjust-color($basic, $lightness: 30%)
+  &:focus
+    outline: none

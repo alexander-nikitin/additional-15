@@ -16,5 +16,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexander-nikitin/additional-15.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexander-nikitin/additional-15/issues"
+  },
+  "homepage": "https://github.com/alexander-nikitin/additional-15#readme",
   "description": ""
 }
